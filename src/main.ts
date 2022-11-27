@@ -13,7 +13,6 @@ function main() {
 
   app.listen(PORT, () => {
     console.log(cliColor.cyan(`server started on port `) + cliColor.greenBright.bold(PORT));
-    throw new Error('unknown issue');
   });
 }
 
