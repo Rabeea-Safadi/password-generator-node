@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Password Generator</title>
+</head>
+
+<body>
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+
+  <section>
+    <form action="#">
+      <input type="number" name="minLength" placeholder="Min Length" min="3" max="16" required>
+      <input type="number" name="maxLength" placeholder="Max Length" min="3" max="16" required>
+      <label for="includeSymbols">
+        Include Symbols?
+        <input type="checkbox" name="includeSymbols" checked>
+      </label>
+      <input type="text" readonly value="<% locals.generatedPassword || '' %>">
+      <input type="submit" value="Generate Password">
+    </form>
+  </section>
+</body>
+
+</html>
