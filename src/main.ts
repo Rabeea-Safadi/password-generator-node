@@ -13,7 +13,7 @@ function main() {
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
-  app.use('', viewsRoutes);
+  app.use('/', viewsRoutes);
   app.use(errorHandler);
 
   app.listen(PORT, () => {
