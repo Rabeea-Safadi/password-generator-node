@@ -15,14 +15,14 @@
   </header>
 
   <section>
-    <form action="#">
+    <form action="/generate" method="post">
       <input type="number" name="minLength" placeholder="Min Length" min="3" max="16" required>
       <input type="number" name="maxLength" placeholder="Max Length" min="3" max="16" required>
       <label for="includeSymbols">
         Include Symbols?
         <input type="checkbox" name="includeSymbols" checked>
       </label>
-      <input type="text" readonly value="<% locals.generatedPassword || '' %>" placeholder="Generated Password...">
+      <input type="text" readonly value="<%= locals.generatedPassword || '' %>" placeholder="Generated Password...">
       <input type="submit" value="Generate Password">
     </form>
   </section>
