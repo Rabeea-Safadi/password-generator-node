@@ -1,13 +1,19 @@
 {
   "name": "password-generator-node",
+  "author": "rabeeasaf",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple node app that generates passwords upon request",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "npm",
+    "generator",
+    "password",
+    "typescript"
+  ],
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
